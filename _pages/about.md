@@ -28,6 +28,7 @@ I am currently a visiting student researcher at UC Berkeley, working in the [Mec
 My research primarily centers around the intersection of autonomous driving and machine learning. My goal is to develop algorithms and techniques that enable machines to interact with humans naturally, make intelligent decisions, and drive as skillfully as experienced human drivers. Specifically, my research interests encompass deep learning and reinforcement learning, applied to areas such as autonomous driving decision-making, prediction and planning, simulation, and human-machine interaction. My contributions have resulted in the publication of over 20 papers in top AI/ITS/Robotics journals and conferences. -->
 
 # 🔥 News
+- **[June. 2025]** I will present our Multi-robot Deadlock Resolution paper in [MMLS 2025](https://midwest-ml.org/2025/).
 <!-- - **[Mar. 2025]** Our paper about Vehicle Lateral Motion Prediction is accepted to [IAV' 25](https://events.engineering.asu.edu/iav-2025/). -->
 - **[Jan. 2025]** Our paper about Multi-robot Deadlock Resolution is accepted to [ICRA' 25](https://2025.ieee-icra.org/).
 - **[Jan. 2025]** Our paper about Sample-efficient Safe Reinforcement Learning is accepted to [ICRA' 25](https://2025.ieee-icra.org/).
