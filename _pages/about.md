@@ -483,12 +483,7 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - Artificial Intelligence Review -->
 
 ## External Reviewer
-<!-- 
-- IEEE International Conference on Robotics and Automation (ICRA) 2022 -- 2024
-- IEEE Intelligent Vehicles Symposium (IV) 2022 -- 2024
-- IEEE Intelligent Transportation Systems Conference (ITSC) 2022 -- 2024
-- IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2023 -->
-- The IEEE/ASME Transactions on Mechatronics
+- The IEEE/ASME Transactions on Mechatronics (TMech)
 - The Conference on Robot Learning (CoRL' 25)
 - IEEE Robotics and Automation Letters (R-AL)
 - 12th IFAC Symposium on Intelligent Autonomous Vehicles (IAV' 25)
