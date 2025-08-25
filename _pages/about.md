@@ -483,6 +483,7 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - Artificial Intelligence Review -->
 
 ## External Reviewer
+- IEEE International Symposium on Multi-Robot & Multi-Agent Systems (IEEE MRS' 25)
 - The IEEE/ASME Transactions on Mechatronics (TMech)
 - The Conference on Robot Learning (CoRL' 25)
 - IEEE Robotics and Automation Letters (R-AL)
