@@ -47,8 +47,8 @@ My research primarily centers around the intersection of autonomous driving and 
 - **[Sep. 2023]** Our paper about connectivity maintenance is accepted to [IROS’23 Workshop](https://ieee-iros.org/).
 
 <details>
-  <summary>show more</summary>
-  - **[Mar. 2023]** Our paper about Image-Based Visual Servoing is accepted to [IFAC’23](https://www.ifac2023.org/).
+<summary>show more</summary>
+- **[Mar. 2023]** Our paper about Image-Based Visual Servoing is accepted to [IFAC’23](https://www.ifac2023.org/).
 </details>
 
 
