@@ -498,6 +498,6 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - [Matthew De La Rosa](https://www.linkedin.com/in/matthewdelarosa/), [REU Program](https://www.nsf.gov/crssprgm/reu/).
 - [Andrew Chen](https://www.linkedin.com/in/andrewchen0028/), [REU Program](https://www.nsf.gov/crssprgm/reu/). Now at [CMU](https://www.cmu.edu/mscf/news/evaluating-masters-in-financial-engineering-programs.html) as a Master student.
 - Zachary Palko, [REU Program](https://www.nsf.gov/crssprgm/reu/).
-- [Siwon Jo](https://www.linkedin.com/in/siwonjo), Bachelor Research Project.
+- [Siwon Jo](https://www.linkedin.com/in/siwonjo), Bachelor Research Project. Now at University of Pennsylvania as a Master student.
 - [Mukul Mohan](https://www.linkedin.com/in/mukul-mohan-77573522a/?trk=people-guest_people_search-card), Bachelor Research Project.
 <!--- [Chris Egersdoerfer](https://www.linkedin.com/in/chris-egersdoerfer-6699b7192/), Bachelor Research Project. Now at UNCC as a master student. -->
