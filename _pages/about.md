@@ -489,7 +489,7 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - The Conference on Robot Learning (CoRL' 25)
 - IEEE Robotics and Automation Letters (R-AL)
 - 12th IFAC Symposium on Intelligent Autonomous Vehicles (IAV' 25)
-- IEEE International Conference on Robotics and Automation (ICRA' 25)
+- IEEE International Conference on Robotics and Automation (ICRA' 25, ICRA' 26)
 - International Federation of Automatic Control (IFAC'23)
 
 ## Mentoring Activities
@@ -500,4 +500,5 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - Zachary Palko, [REU Program](https://www.nsf.gov/crssprgm/reu/).
 - [Siwon Jo](https://www.linkedin.com/in/siwonjo), Bachelor Research Project. Now at University of Pennsylvania as a Master student.
 - [Mukul Mohan](https://www.linkedin.com/in/mukul-mohan-77573522a/?trk=people-guest_people_search-card), Bachelor Research Project.
-<!--- [Chris Egersdoerfer](https://www.linkedin.com/in/chris-egersdoerfer-6699b7192/), Bachelor Research Project. Now at UNCC as a master student. -->
+
+(last updated: Sep. 2025)
