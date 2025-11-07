@@ -483,6 +483,7 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - Artificial Intelligence Review -->
 
 ## External Reviewer
+- The 2026 American Control Conference (ACC' 26)
 - IEEE Transactions on Automation Science and Engineering (IEEE T-ASE)
 - IEEE International Symposium on Multi-Robot & Multi-Agent Systems (IEEE MRS' 25)
 - The IEEE/ASME Transactions on Mechatronics (TMech)
@@ -501,4 +502,4 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - [Siwon Jo](https://www.linkedin.com/in/siwonjo), Bachelor Research Project. Now at University of Pennsylvania as a Master student.
 - [Mukul Mohan](https://www.linkedin.com/in/mukul-mohan-77573522a/?trk=people-guest_people_search-card), Bachelor Research Project.
 
-(last updated: Sep. 2025)
+(last updated: Nov. 2025)
