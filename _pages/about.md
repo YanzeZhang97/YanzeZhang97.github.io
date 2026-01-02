@@ -460,7 +460,7 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - *2018.10* National Scholarship (Top 1%)
 - *2017.10* National Scholarship (Top 1%) -->
 - *2023.06* Conference Travel Award from the Graduate School of UNC Charlotte.
-- *2017, 2019* RoboMaster International First Price.
+- *2017, 2019* [RoboMaster](https://www.robomaster.com/en-US) International First Price.
 
 
 # 📖 Education
