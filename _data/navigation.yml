@@ -20,5 +20,7 @@ main:
   - title: "Services"
     url: "/#-services"
 
+  - title: "Projects"
+    url: "/projects/"
 #  - title: "Internships"
 #    url: "/#-internships"
