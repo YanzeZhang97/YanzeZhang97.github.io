@@ -486,6 +486,7 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - Artificial Intelligence Review -->
 
 ## External Reviewer
+- The IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS' 26)
 - The 2026 American Control Conference (ACC' 26)
 - IEEE Transactions on Automation Science and Engineering (IEEE T-ASE)
 - IEEE International Symposium on Multi-Robot & Multi-Agent Systems (IEEE MRS' 25)
@@ -494,7 +495,7 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - IEEE Robotics and Automation Letters (R-AL)
 - 12th IFAC Symposium on Intelligent Autonomous Vehicles (IAV' 25)
 - IEEE International Conference on Robotics and Automation (ICRA' 25, ICRA' 26)
-- International Federation of Automatic Control (IFAC'23)
+- International Federation of Automatic Control (IFAC'23, IFAC'26)
 
 ## Mentoring Activities
 - [Ian Gao](https://www.linkedin.com/in/ian-gao-978667162/), Bachelor Research Project. Now at UNC Chaphill as an undergraduate.
@@ -505,4 +506,4 @@ Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
 - [Siwon Jo](https://www.linkedin.com/in/siwonjo), Bachelor Research Project. Now at University of Pennsylvania as a Master student.
 - [Mukul Mohan](https://www.linkedin.com/in/mukul-mohan-77573522a/?trk=people-guest_people_search-card), Bachelor Research Project.
 
-(last updated: Nov. 2025)
+(last updated: Mar. 2026)
