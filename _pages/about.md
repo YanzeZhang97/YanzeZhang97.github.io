@@ -11,8 +11,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # About Me
-I am a Ph.D. student major in Computer Science at [University of Illinois Chicago (UIC)](https://www.uic.edu/), where I am fortunate to be supervised by [Prof. Wenhao Luo](https://cs.uic.edu/profiles/luo-wenhao/). Prior to that, I worked as a research assistant at 
-[University of North Carolina at Charlotte (UNC Charlotte)](https://www.charlotte.edu/). I completed my master's degree in Mechanical Engineering
+I am a Ph.D. student major in Computer Science in [BDSC lab](https://bdsc-uic.github.io/) at [University of Illinois Chicago (UIC)](https://www.uic.edu/), where I am fortunate to be supervised by [Prof. Philip S. Yu](https://cs.uic.edu/profiles/philip-yu/).
+<!-- Prior to that, I worked as a research assistant at [University of North Carolina at Charlotte (UNC Charlotte)](https://www.charlotte.edu/). -->
+I completed my master's degree in Mechanical Engineering
 from [Dalian University of Technology (DUT)](https://en.dlut.edu.cn/), and obtained my bachelor’s degree from [China University of Petroleum (UPC)](https://english.upc.edu.cn/). 
 <!-- I am a Ph.D. student major in Computer Science at [UNC Charlotte](https://www.charlotte.edu/), where I am fortunate to be supervised
 by [Prof. Wenhao Luo](https://webpages.charlotte.edu/wluo4/). 
@@ -28,6 +29,7 @@ I am currently a visiting student researcher at UC Berkeley, working in the [Mec
 My research primarily centers around the intersection of autonomous driving and machine learning. My goal is to develop algorithms and techniques that enable machines to interact with humans naturally, make intelligent decisions, and drive as skillfully as experienced human drivers. Specifically, my research interests encompass deep learning and reinforcement learning, applied to areas such as autonomous driving decision-making, prediction and planning, simulation, and human-machine interaction. My contributions have resulted in the publication of over 20 papers in top AI/ITS/Robotics journals and conferences. -->
 
 # 🔥 News
+- **[July 2026]** Our paper about adaptive uncertainty quantification is accepted by [CDC 2026](https://cdc2026.ieeecss.org/).
 - **[April 2026]** Our paper about safe model-based RL is accepted by [IROS 2026](https://2026.ieee-iros.org/).
 - **[April 2026]** Our paper about Time-aggregated Connectivity is accepted by [RSS 2026](https://roboticsconference.org/).
 - **[April 2026]** Our paper about Adaptive PT-CBF is accepted by [IFAC 2026](https://ifac2026.org/fairDash.do).
