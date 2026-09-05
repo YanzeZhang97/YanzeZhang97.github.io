@@ -17,10 +17,8 @@ I completed my master's degree in Mechanical Engineering
 from [Dalian University of Technology (DUT)](https://en.dlut.edu.cn/), and obtained my bachelor’s degree from [China University of Petroleum (UPC)](https://english.upc.edu.cn/). 
 <!-- I am a Ph.D. student major in Computer Science at [UNC Charlotte](https://www.charlotte.edu/), where I am fortunate to be supervised
 by [Prof. Wenhao Luo](https://webpages.charlotte.edu/wluo4/). 
-I completed my master's degree in Mechanical Engineering
-from [DUT](https://en.dlut.edu.cn/), and prior to that, I obtained my bachelor’s degree from [UPC](https://english.upc.edu.cn/). -->
 
-I am passionate about Robotics, Control theory, Computer Vision and Reinforcement Learning, and my goal is to empower the multi-robot system with intelligence(robust and interactive autonomy), which enables robots to make informed decisions for safely and effectively collaborating with each other and with humans in the physical world. Currently, I am conducting simulations and real-world verifications of multi-agent control systems, focusing on developing algorithms for large-scale mixed-autonomy coordination.
+<!-- I am passionate about Robotics, Control theory, Computer Vision and Reinforcement Learning, and my goal is to empower the multi-robot system with intelligence(robust and interactive autonomy), which enables robots to make informed decisions for safely and effectively collaborating with each other and with humans in the physical world. Currently, I am conducting simulations and real-world verifications of multi-agent control systems, focusing on developing algorithms for large-scale mixed-autonomy coordination. -->
 
 <!-- 
 I am currently a visiting student researcher at UC Berkeley, working in the [Mechanical Systems Control (MSC) Lab](https://msc.berkeley.edu/) under the guidance of Prof. Masayoshi Tomizuka and Dr. Wei Zhan. I am pursuing a Ph.D. in the School of Mechanical and Aerospace Engineering at Nanyang Technological University. My research endeavors are based in the [Automated Driving and Human-Machine System (AutoMan) Lab](https://lvchen.wixsite.com/automan), which is led by Prof. Chen Lyu. **I am actively seeking postdoctoral positions to propel my research career further.** -->
