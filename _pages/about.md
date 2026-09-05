@@ -15,13 +15,12 @@ I am a Ph.D. student major in Computer Science in [BDSC lab](https://bdsc-uic.gi
 <!-- Prior to that, I worked as a research assistant at [University of North Carolina at Charlotte (UNC Charlotte)](https://www.charlotte.edu/). -->
 I completed my master's degree in Mechanical Engineering
 from [Dalian University of Technology (DUT)](https://en.dlut.edu.cn/), and obtained my bachelor’s degree from [China University of Petroleum (UPC)](https://english.upc.edu.cn/). 
-<!-- I am a Ph.D. student major in Computer Science at [UNC Charlotte](https://www.charlotte.edu/), where I am fortunate to be supervised
-by [Prof. Wenhao Luo](https://webpages.charlotte.edu/wluo4/). 
+
+My research interests primarily lie in Robotics, Reinforcement Learning, Computer Vision and Control Theory.
+<!-- My research interests primarily lie in Robotics, Reinforcement Learning, Computer Vision and Control Theory. My current research focuses on the addressing the foundamental chanlleging on grounding LLM into robotics, specifically on design self-envolving structure and memory retrival. By developing principled frameworks for agent reasoning with physical world, I strive to create robust and efficient autonomous agents for robots contributing to the real world. -->
 
 <!-- I am passionate about Robotics, Control theory, Computer Vision and Reinforcement Learning, and my goal is to empower the multi-robot system with intelligence(robust and interactive autonomy), which enables robots to make informed decisions for safely and effectively collaborating with each other and with humans in the physical world. Currently, I am conducting simulations and real-world verifications of multi-agent control systems, focusing on developing algorithms for large-scale mixed-autonomy coordination. -->
 
-<!-- 
-I am currently a visiting student researcher at UC Berkeley, working in the [Mechanical Systems Control (MSC) Lab](https://msc.berkeley.edu/) under the guidance of Prof. Masayoshi Tomizuka and Dr. Wei Zhan. I am pursuing a Ph.D. in the School of Mechanical and Aerospace Engineering at Nanyang Technological University. My research endeavors are based in the [Automated Driving and Human-Machine System (AutoMan) Lab](https://lvchen.wixsite.com/automan), which is led by Prof. Chen Lyu. **I am actively seeking postdoctoral positions to propel my research career further.** -->
 
 <!-- 
 My research primarily centers around the intersection of autonomous driving and machine learning. My goal is to develop algorithms and techniques that enable machines to interact with humans naturally, make intelligent decisions, and drive as skillfully as experienced human drivers. Specifically, my research interests encompass deep learning and reinforcement learning, applied to areas such as autonomous driving decision-making, prediction and planning, simulation, and human-machine interaction. My contributions have resulted in the publication of over 20 papers in top AI/ITS/Robotics journals and conferences. -->

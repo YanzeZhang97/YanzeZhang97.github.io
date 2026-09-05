@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>about.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+html,footer,header{
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///Users/yanzezhang/Documents/Personal_Website/YanzeZhang97.github.io/R%3A%5C2.Travail%5C1.Enseignement%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css"><link rel="stylesheet" href="file:///Users/yanzezhang/Documents/Personal_Website/YanzeZhang97.github.io/D%3A%5Crdaros%5CCours%5C_1.Outils%5C2.Developpement%5C1.SCSS%5Cmain.css" type="text/css">
+</head>
+
+<body>
+    <p><span class='anchor' id='about-me'></span></p>
+<h1 id="about-me">About Me</h1>
+<p>I am a Ph.D. student major in Computer Science in <a href="https://bdsc-uic.github.io/">BDSC lab</a> at <a href="https://www.uic.edu/">University of Illinois Chicago (UIC)</a>, where I am fortunate to be supervised by <a href="https://cs.uic.edu/profiles/philip-yu/">Prof. Philip S. Yu</a>.</p>
+<!-- Prior to that, I worked as a research assistant at [University of North Carolina at Charlotte (UNC Charlotte)](https://www.charlotte.edu/). -->
+<p>I completed my master's degree in Mechanical Engineering<br>
+from <a href="https://en.dlut.edu.cn/">Dalian University of Technology (DUT)</a>, and obtained my bachelor’s degree from <a href="https://english.upc.edu.cn/">China University of Petroleum (UPC)</a>.</p>
+<p>My research interests primarily lie in Robotics, Reinforcement Learning, Computer Vision and Control Theory.</p>
+<!-- My research interests primarily lie in Robotics, Reinforcement Learning, Computer Vision and Control Theory. My current research focuses on the addressing the foundamental chanlleging on grounding LLM into robotics, specifically on design self-envolving structure and memory retrival. By developing principled frameworks for agent reasoning with physical world, I strive to create robust and efficient autonomous agents for robots contributing to the real world. -->
+<!-- I am passionate about Robotics, Control theory, Computer Vision and Reinforcement Learning, and my goal is to empower the multi-robot system with intelligence(robust and interactive autonomy), which enables robots to make informed decisions for safely and effectively collaborating with each other and with humans in the physical world. Currently, I am conducting simulations and real-world verifications of multi-agent control systems, focusing on developing algorithms for large-scale mixed-autonomy coordination. -->
+<!-- 
+My research primarily centers around the intersection of autonomous driving and machine learning. My goal is to develop algorithms and techniques that enable machines to interact with humans naturally, make intelligent decisions, and drive as skillfully as experienced human drivers. Specifically, my research interests encompass deep learning and reinforcement learning, applied to areas such as autonomous driving decision-making, prediction and planning, simulation, and human-machine interaction. My contributions have resulted in the publication of over 20 papers in top AI/ITS/Robotics journals and conferences. -->
+<h1 id="%F0%9F%94%A5-news">🔥 News</h1>
+<ul>
+<li><strong>[July 2026]</strong> Our paper about adaptive uncertainty quantification is accepted by <a href="https://cdc2026.ieeecss.org/">CDC 2026</a>.</li>
+<li><strong>[April 2026]</strong> Our paper about safe model-based RL is accepted by <a href="https://2026.ieee-iros.org/">IROS 2026</a>.</li>
+<li><strong>[April 2026]</strong> Our paper about Time-aggregated Connectivity is accepted by <a href="https://roboticsconference.org/">RSS 2026</a>.</li>
+<li><strong>[April 2026]</strong> Our paper about Adaptive PT-CBF is accepted by <a href="https://ifac2026.org/fairDash.do">IFAC 2026</a>.</li>
+<li><strong>[Jan. 2026]</strong> Our paper about geometry-aware CBF is accepted by <a href="https://2026.ieee-icra.org/">ICRA 2026</a>.</li>
+<li><strong>[Jun. 2025]</strong> I will present our Multi-robot Deadlock Resolution paper in <a href="https://midwest-ml.org/2025/">MMLS 2025</a>.</li>
+</ul>
+<!-- - **[Mar. 2025]** Our paper about Vehicle Lateral Motion Prediction is accepted to [IAV' 25](https://events.engineering.asu.edu/iav-2025/). -->
+<ul>
+<li><strong>[Jan. 2025]</strong> Our paper about Multi-robot Deadlock Resolution is accepted to <a href="https://2025.ieee-icra.org/">ICRA' 25</a>.</li>
+<li><strong>[Jan. 2025]</strong> Our paper about Sample-efficient Safe Reinforcement Learning is accepted to <a href="https://2025.ieee-icra.org/">ICRA' 25</a>.</li>
+<li><strong>[Nov. 2024]</strong> I will attend the <a href="https://rsvp.withgoogle.com/events/google-generative-ai-intensive/home">Join the 5-Day Gen AI Intensive Course with Google</a>.</li>
+<li><strong>[Oct. 2024]</strong> Our project <strong><a href="https://teddyhuang-00.github.io/TurboTrash/">Turbo Trash</a></strong> obtained the 1st place in HACKTHON CLT 2024.</li>
+<li><strong>[Sep. 2024]</strong> I will present our work about autonomous driving on ITSC 2024.</li>
+</ul>
+<details markdown="1">
+  <summary>show more</summary>
+</details><ul>
+<li><strong>[Jul. 2024]</strong> Our paper about Courteous Driving using CBF-inspired Risk is accepted to <a href="https://ieee-itsc.org/2024/">ITSC' 24</a>.</li>
+<li><strong>[Jul. 2024]</strong> Our paper about Individualizable Risk Assessment is accepted to <a href="https://ieee-itsc.org/2024/">ITSC' 24</a>.</li>
+<li><strong>[June. 2024]</strong> Our paper about Data-driven Connectivity Maintenance is accepted to <a href="https://iros2024-abudhabi.org/">IROS' 24</a>.</li>
+<li><strong>[June. 2024]</strong> Our paper about Vehicle Longitudinal Motion Prediction is accepted to <a href="https://mecc2024.a2c2.org/">MECC' 24</a>.</li>
+<li><strong>[May. 2024]</strong> Our paper about Line-of-Sight Connectivity Maintenance is accepted to <a href="https://roboticsconference.org/">RSS’24</a>.</li>
+<li><strong>[Jan. 2024]</strong> Our paper about Conformal Prediction is accepted to <a href="https://acc2024.a2c2.org/">ACC’24</a>.</li>
+<li><strong>[Oct. 2023]</strong> I will present our work at <a href="https://sites.bu.edu/mrs2023/">MRS’23</a>.</li>
+<li><strong>[Oct. 2023]</strong> Our paper about multi-agent deadlock resolution is accepted to <a href="https://sites.bu.edu/mrs2023/">MRS’23</a>.</li>
+<li><strong>[Oct. 2023]</strong> Our paper about connectivity maintenance is accepted to <a href="https://sites.bu.edu/mrs2023/">MRS’23</a>.</li>
+<li><strong>[Sep. 2023]</strong> Our paper about connectivity maintenance is accepted to <a href="https://ieee-iros.org/">IROS’23 Workshop</a>.</li>
+<li><strong>[Mar. 2023]</strong> Our paper about Image-Based Visual Servoing is accepted to <a href="https://www.ifac2023.org/">IFAC’23</a>.</li>
+</ul>
+
+<!-- 
+- *2024.01*: &nbsp;🎉🎉 Our paper on joint prediction and planning for tree policy has been accepted by ICRA! See you in Yokohama, Japan!
+- *2024.01*: &nbsp;🎉🎉 Our paper on joint prediction and planning for tree policy has been accepted by ICRA! See you in Yokohama, Japan!
+- *2023.11*: &nbsp; I was invited by zdjszx.com to give a public lecture on "Scalable, Learnable, and Interactive Decision-making for Autonomous Driving". The recorded version of the lecture (in Chinese) is available for viewing on [bilibili](https://www.bilibili.com/video/BV1Mz4y1c7BS/?share_source=copy_web&vd_source=d38ad63504821012428c34311a1df246).
+- *2023.10*: &nbsp;🎉🎉 Our paper on brain-inspired reinforcement learning for safe autonomous driving has been accepted by TPAMI!
+- *2023.09*: &nbsp;🎉🎉 We won the best paper runner-up award in ITSC 2023!
+- *2023.09*: &nbsp;🎉🎉 Our paper on human-guided reinforcement learning for robot navigation has been accepted by TPAMI!
+- *2023.08*: &nbsp;🎉🎉 Our GameFormer paper has been accepted by ICCV as **Oral presentation**!
+- *2023.07*: &nbsp;🎉🎉 Our ITSC special session on [learning-powered prediction and decision-making](https://sites.google.com/view/itsc-lpad) has received 17 paper submissions, all of which were accepted. Congratulations to the authors!
+- *2023.06*: &nbsp;🎉🎉 Our team won the innovation award in the nuPlan Planning Challenge! Check out our [report](https://opendrivelab.com/e2ead/AD23Challenge/Track_4_AID.pdf) and [presentation](https://youtu.be/ZwhXilQKULY?t=1204) on our GameFormer Planner.
+- *2023.06*: &nbsp;🎉🎉 Our team secured third place in the Waymo Open Dataset Motion Prediction Challenge! Our [report](https://storage.googleapis.com/waymo-uploads/files/research/2023%20Technical%20Reports/MP_3rd_GRT-R36.pdf) is available on [CVPR 2023
+Workshop on Autonomous Driving](https://cvpr2023.wad.vision/). -->
+<h1 id="%F0%9F%93%9D-publications">📝 Publications</h1>
+<h2 id="highlights">Highlights</h2>
+<style>
+.paper-box-image {
+  text-align: center;
+}
+.paper-image {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+<div class="paper-box"><div class="paper-box-image"><img src="file:///Users/yanzezhang/Documents/Personal_Website/YanzeZhang97.github.io/_pages/images/0204.gif" alt="demo" width="70%" class="paper-image"></div>
+<div class="paper-box-text" markdown="1">
+</div></div><p><strong>Adaptive Deadlock Avoidance for Decentralized Multi-Agent Systems via CBF-inspired Risk Measurement</strong></p>
+<p>Yanze Zhang, Yiwei Lyu, Siwon Jo, Yupeng Yang, Wenhao Luo</p>
+<p><strong>IEEE International Conference on Robotics and Automation (ICRA), 2025</strong></p>
+<p><a href="https://arxiv.org/abs/2503.09621"><strong>Paper</strong></a></p>
+<ul>
+<li>We present a novel decentralized framework that ensures both efficient task execution and deadlock<br>
+resolution for multi-agent systems, which enables co-optimization<br>
+between the task-related controller and deadlock resolution<br>
+controller, yielding smoother robots’ motion with improved overall task execution efficiency</li>
+</ul>
+
+ 
+<!-- <style>
+.paper-box-image {
+  text-align: center;
+}
+.paper-image {
+  display: block;
+  margin: 0 auto;
+}
+</style> -->
+<!-- <div class='paper-box'><div class='paper-box-image'><img src='images/0204.gif' alt="demo" width="70%" class="paper-image"></div>
+<div class='paper-box-text' markdown="1">
+<div class='paper-box'> -->
+<div class="paper-box"><div class="paper-box-image">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9Cekw5xafWw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="paper-box-text" markdown="1">
+**Courteous MPC for Autonomous Driving with CBF-inspired Risk Assessment**
+</div></div><p>Yanze Zhang, Yiwei Lyu, Sude E. Demir, Xingyu Zhou, Yupeng Yang, Junming Wang, Wenhao Luo</p>
+<p><strong>IEEE International Conference on Intelligent Transportation Systems (ITSC), 2024</strong></p>
+<p><a href="https://arxiv.org/abs/2408.12822v1"><strong>Paper</strong></a></p>
+<ul>
+<li>we develop an extension of the CBF-inspired risk evaluation framework that takes into account both noisy observed positions and motions, which are then integrated with MPC to ensure smooth and robust decision-making for AVs.</li>
+</ul>
+
+ 
+<!--
+## Highlights
+<div class='paper-box'><div class='paper-box-image'><img src='images/DTPP.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**DTPP: Differentiable Joint Conditional Prediction and Cost Evaluation for Tree Policy Planning in Autonomous Driving**
+
+Zhiyu Huang, Peter Karkus, Boris Ivanovic, Yuxiao Chen, Marco Pavone, Chen Lv
+
+**IEEE International Conference on Robotics and Automation (ICRA), 2024**
+
+[**Paper**](https://arxiv.org/abs/2310.05885) \| [![](https://img.shields.io/github/stars/MCZhi/DTPP?style=social&label=Code Stars)](https://github.com/MCZhi/DTPP)
+
+-  We employ a tree-structured policy planner and propose a differentiable joint training framework for both ego-conditioned prediction and cost evaluation models, resulting in a direct improvement of the final planning performance.
+</div>
+</div> -->
+<!---
+<div class='paper-box'><div class='paper-box-image'><img src='images/thesis.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Learning-enabled Decision-making for Autonomous Driving: Framework and Methodology**
+
+**PhD Thesis, 2023**
+
+[**Thesis**](https://dr.ntu.edu.sg/handle/10356/172842)
+
+-  This thesis presents a comprehensive framework and a series of learning-based methodologies for decision-making in AVs, with the objective of improving the scalability, adaptability, and alignment of their decision-making systems.
+</div>
+</div>
+-->
+<!--
+<div class='paper-box'><div class='paper-box-image'><img src='images/gameformer.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">  
+  
+**GameFormer: Game-theoretic Modeling and Learning of Transformer-based Interactive Prediction and Planning for Autonomous Driving**
+
+Zhiyu Huang, Haochen Liu, Chen Lv
+
+**IEEE/CVF International Conference on Computer Vision (ICCV), 2023**
+
+**Oral presentation (top 3%)**
+
+[**Paper**](https://arxiv.org/abs/2303.05760) \| [**Project**](https://mczhi.github.io/GameFormer/) \| [![](https://img.shields.io/github/stars/MCZhi/GameFormer?style=social&label=Code Stars)](https://github.com/MCZhi/GameFormer) \| **GameFormer Planner** [![](https://img.shields.io/github/stars/MCZhi/GameFormer-Planner?style=social&label=Code Stars)](https://github.com/MCZhi/GameFormer-Planner) 
+
+-  We address the interaction prediction problem by formulating it with hierarchical game theory and implementing it with TransFormer networks.
+</div>
+</div> -->
+<!--
+<div class='paper-box'><div class='paper-box-image'><img src='images/IADM.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">  
+  
+**Learning Interaction-aware Motion Prediction Model for Decision-making in Autonomous Driving**
+
+Zhiyu Huang, Haochen Liu, Jingda Wu, Wenhui Huang, Chen Lv
+
+**IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023** 
+
+[**Best Paper Runner-up Award**](https://2023.ieee-itsc.org/best-paper-awards/)
+
+[**Paper**](https://arxiv.org/abs/2302.03939) \| [![](https://img.shields.io/github/stars/MCZhi/Predictive-Decision?style=social&label=Code Stars)](https://github.com/MCZhi/Predictive-Decision)
+
+-  We propose an interaction-aware motion prediction model that is able to predict other agents' future trajectories according to the ego agent's future plans, i.e., their reactions to the ego's actions.
+</div>
+</div> -->
+<!--
+<div class='paper-box'><div class='paper-box-image'><img src='images/CMPIRL.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Conditional Predictive Behavior Planning with Inverse Reinforcement Learning for Human-like Autonomous Driving**
+
+Zhiyu Huang, Haochen Liu, Jingda Wu, Chen Lv
+
+**IEEE Transactions on Intelligent Transportation Systems, 2023**
+
+[**Paper**](https://arxiv.org/abs/2212.08787)
+
+- Distinguished from existing learning-based methods that directly output decisions, we introduce a predictive behavior planning framework that learns to predict and evaluate from human driving data. 
+</div>
+</div> -->
+<!-- 
+<div class='paper-box'><div class='paper-box-image'><img src='images/DIPP.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">  
+  
+**Differentiable Integrated Motion Prediction and Planning with Learnable Cost Function for Autonomous Driving**
+
+Zhiyu Huang, Haochen Liu, Jingda Wu, Chen Lv
+
+**IEEE Transactions on Neural Networks and Learning Systems, 2023** 
+
+[**Paper**](https://arxiv.org/abs/2207.10422) \| [**Project**](https://mczhi.github.io/DIPP/) \| [![](https://img.shields.io/github/stars/MCZhi/DIPP?style=social&label=Code Stars)](https://github.com/MCZhi/DIPP)
+
+-  We propose an end-to-end differentiable framework that integrates prediction and planning modules and is able to learn the cost function from data.
+</div>
+</div> -->
+<!-- 
+<div class='paper-box'><div class='paper-box-image'><img src='images/prediction.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Multi-modal Motion Prediction with Transformer-based Neural Network for Autonomous Driving**
+
+Zhiyu Huang, Xiaoyu Mo, Chen Lv
+
+**IEEE International Conference on Robotics and Automation (ICRA), 2022**
+
+[**Paper**](https://arxiv.org/abs/2109.06446)
+
+-  We propose a neural prediction framework based on the Transformer structure to model the relationship among the interacting agents and extract the attention of the target agent on the map waypoints.
+</div>
+</div> -->
+<!-- 
+<div class='paper-box'><div class='paper-box-image'><img src='images/ExpertDRL.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Efficient Deep Reinforcement Learning with Imitative Expert Priors for Autonomous Driving**
+
+Zhiyu Huang, Jingda Wu, Chen Lv
+
+**IEEE Transactions on Neural Networks and Learning Systems, 2022**
+
+[**Paper**](https://arxiv.org/abs/2103.10690) \|  [**Project**](https://mczhi.github.io/Expert-Prior-RL/) \| [![](https://img.shields.io/github/stars/MCZhi/Expert-Prior-RL?style=social&label=Code Stars)](https://github.com/MCZhi/Expert-Prior-RL)
+
+-  We propose a novel framework to incorporate human prior knowledge in DRL, in order to improve the sample efficiency and save the effort of designing sophisticated reward functions.
+</div>
+</div> -->
+<!-- 
+<div class='paper-box'><div class='paper-box-image'><img src='images/IRL.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Driving Behavior Modeling using Naturalistic Human Driving Data with Inverse Reinforcement Learning** 
+
+Zhiyu Huang, Jingda Wu, Chen Lv
+
+**IEEE Transactions on Intelligent Transportation Systems, 2021**
+
+[**Paper**](https://arxiv.org/abs/2010.03118) \| [![](https://img.shields.io/github/stars/MCZhi/Driving-IRL-NGSIM?style=social&label=Code Stars)](https://github.com/MCZhi/Driving-IRL-NGSIM)
+
+- We propose a structural assumption about internal reward function-based human driving behavior and employ sampling-based maximum entropy inverse reinforcement learning (IRL) algorithm to infer the reward function parameters from naturalistic human driving data.
+</div>
+</div>
+-->
+<!-- 
+<div class='paper-box'><div class='paper-box-image'><img src='images/multimodal.png' alt="sym" width="100%"></div>
+<div class='paper-box-text' markdown="1">
+
+**Multi-modal sensor fusion-based deep neural network for end-to-end autonomous driving with scene understanding** 
+
+Zhiyu Huang, Chen Lv, Yang Xing, Jingda Wu
+
+**IEEE Sensors Journal, 2020**
+
+[**Paper**](https://arxiv.org/abs/2005.09202)
+
+- We propose a novel deep neural network-based system for end-to-end autonomous driving, consisting of multimodal sensor fusion, scene understanding, and conditional driving policy modules. 
+</div>
+</div>
+-->
+<h2 id="all-publications">All Publications</h2>
+<!-- - *A Lateral Motion Model Predicting Vehicle Behaviors in Lane Change Maneuvers.*
+  <br>
+  Yiming Yan, Haoji Liu, Xingyu Zhou, **Yanze Zhang**, Wenhao Luo, and Junmin Wang
+  <br>
+  Accepted to the 12th IFAC Symposium on Intelligent Autonomous Vehicles (**IAV' 25**), 2025 
+  <br>
+  [PDF-TBA] -->
+<ul>
+<li>
+<p><em>Adaptive Deadlock Avoidance for Decentralized Multi-Agent Systems via CBF-inspired Risk Measurement.</em><br>
+<br><br>
+<strong>Yanze Zhang</strong>, Yiwei Lyu, Siwon Jo, Yupeng Yang, and Wenhao Luo<br>
+<br><br>
+Accepted to the 2025 IEEE International Conference on Robotics and Automation (<strong>ICRA' 25</strong>), 2025<br>
+<br><br>
+[<a href="https://arxiv.org/abs/2503.09621">PDF</a>]</p>
+</li>
+<li>
+<p><em>Computation and Sample Efficient Safe Reinforcement Learning Using Adaptive Conformal Prediction.</em><br>
+<br><br>
+Hao Zhou, <strong>Yanze Zhang</strong>, and Wenhao Luo<br>
+<br><br>
+Accepted to the 2025 IEEE International Conference on Robotics and Automation (<strong>ICRA' 25</strong>), 2025<br>
+<br><br>
+[<a href="https://arxiv.org/abs/2503.17678">PDF</a>]</p>
+</li>
+<li>
+<p><em>Courteous MPC for Autonomous Driving with CBF-inspired Risk Assessment.</em><br>
+<br><br>
+<strong>Yanze Zhang</strong>, Yiwei Lyu, Sude Ela Demir, Xingyu Zhou, Yupeng Yang, Junmin Wang and Wenhao Luo<br>
+<br><br>
+Accepted to the 27th IEEE International Conference on Intelligent Transportation Systems (<strong>ITSC' 24</strong>), 2024<br>
+<br><br>
+[<a href="https://arxiv.org/abs/2408.12822v1">PDF</a>][<a href="https://youtu.be/9Cekw5xafWw">Demo-NGSIM</a>][<a href="https://youtu.be/9Cekw5xafWw">Demo-IDM</a>]</p>
+</li>
+<li>
+<p><em>Individualizable Risk Assessment Map for Planning Vehicle Behaviors Respecting Perceived Safety.</em><br>
+<br><br>
+Ji Hwan Park, <strong>Yanze Zhang</strong>, Wenaho Luo, and Junmin Wang<br>
+<br><br>
+Accepted to the 27th IEEE International Conference on Intelligent Transportation Systems (<strong>ITSC' 24</strong>), 2024<br>
+<br><br>
+[<a href="https://ieeexplore.ieee.org/abstract/document/10919751">PDF</a>]</p>
+</li>
+<li>
+<p><em>Integrating Online Learning and Connectivity Maintenance for Communication-Aware Multi-Robot Coordination.</em><br>
+<br><br>
+Yupeng Yang, Yiwei Lyu, <strong>Yanze Zhang</strong>, Ian Gao, and Wenhao Luo<br>
+<br><br>
+Accepted to the 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (<strong>IROS' 24</strong>), 2024<br>
+<br><br>
+[<a href="https://arxiv.org/abs/2410.05798">PDF</a>][<a href="https://github.com/wenhaol/DCM-RSSI">Project</a>][<a href="https://wenhaol.github.io/DCM-RSSI/">Website</a>]</p>
+</li>
+<li>
+<p><em>A Transitional Intelligent Driver Model Enabling Vehicle Longitudinal Motion Prediction in Lane-Change Maneuvers.</em><br>
+<br><br>
+Sude E. Demir, Xingyu Zhou, <strong>Yanze Zhang</strong>, Wenhao Luo, and Junmin Wang<br>
+<br><br>
+Accepted to the 4th Modeling, Estimation, and Control Conference (<strong>MECC' 24</strong>), 2024<br>
+<br><br>
+[<a href="https://www.researchgate.net/profile/Xingyu-Zhou-14/publication/388321405_A_Transitional_Intelligent_Driver_Model_Enabling_Vehicle_Longitudinal_Motion_Prediction_in_Lane-Change_Maneuvers/links/6792f47b96e7fb48b99b7658/A-Transitional-Intelligent-Driver-Model-Enabling-Vehicle-Longitudinal-Motion-Prediction-in-Lane-Change-Maneuvers.pdf">PDF</a>]</p>
+</li>
+<li>
+<p><em>Decentralized Multi-Robot Line-of-Sight Connectivity Maintenance under Uncertainty.</em><br>
+<br><br>
+Yupeng Yang, Yiwei Lyu, <strong>Yanze Zhang</strong>, Sha Yi, and Wenhao Luo<br>
+<br><br>
+Accepted to the 2024 Robotics: Science and Systems (<strong>RSS'24</strong>), 2024<br>
+<br><br>
+[<a href="https://arxiv.org/pdf/2406.12802">PDF</a>][<a href="https://www.youtube.com/watch?v=kRQoEh3hgXE">Video</a>]</p>
+</li>
+<li>
+<p><em>Safety-Critical Control with Uncertainty Quantification using Adaptive Conformal Prediction.</em><br>
+<br><br>
+Hao Zhou, <strong>Yanze Zhang</strong>, and Wenhao Luo<br>
+<br><br>
+Accepted to the 2024 American Control Conference (<strong>ACC'24</strong>), 2024<br>
+<br><br>
+[<a href="https://arxiv.org/abs/2407.03569v1">PDF</a>]</p>
+</li>
+</ul>
+<!--
+- *Ecologically-Inspired Decentralized Multi-Agent System with Deadlock Avoidance.*
+  <br>
+  <br>
+  **Yanze Zhang**, Yiwei Lyu, Siwon Jo, Yupeng Yang, Wenhao Luo
+  <br>
+  <br>
+  Accepted as a extended abstract to appear in the 4th IEEE International Symposium on Multi-Robot & Multi-Agent Systems (**MRS'23**), 2023 
+  <br>
+  <br>
+  [PDF-TBA][Poster-TBA][Code-TBA]
+
+- *Decentralized Motion Coordination for Minimally Disruptive Multi-Robot Line-of-Sight Connectivity Maintenance under Uncertainty.*
+  <br>
+  Yupeng Yang, Yiwei Lyu, Sha Yi, **Yanze Zhang**, Wenhao Luo
+  <br>
+  Accepted as a extended abstract to appear in the 4th IEEE International Symposium on Multi-Robot & Multi-Agent Systems (**MRS'23**), 2023 
+  <br>
+  [PDF-TBA][Poster-TBA][Code-TBA] -->
+<!-- - *Global and Subgroup Connectivity Maintenance for Decentralized Multi-Robot Networks under Uncertainty.*
+  <br>
+  Yupeng Yang, Yiwei Lyu, Sha Yi, **Yanze Zhang**, Wenhao Luo
+  <br>
+  Accepted as a workshop paper to appear in the 35th International Conference on Intelligent Robots and Systems (**IROS'23**), 2023 
+  <br>
+  [[PDF](https://djhanove.github.io/IROS23_MRS/assets/papers/iros2023workshop_subgroupConnectivity.pdf)] -->
+  <!--[Slides-TBA][Code-TBA] -->
+<ul>
+<li><em>Occlusion-Free Image Based Visual Servoing Using Probabilistic Control Barrier Certificates.</em><br>
+<br><br>
+<strong>Yanze Zhang</strong>, Yupeng Yang, Wenhao Luo<br>
+<br><br>
+Accepted to appear in the 22th World Congress of International Federation of Automatic Control (<strong>IFAC'23</strong>), 2023<br>
+<br><br>
+[<a href="https://arxiv.org/pdf/2309.03476.pdf">PDF</a>][<a href="https://drive.google.com/file/d/15gWHsd9hAaYWi5rJtmvI__ndZo16p263/view?usp=sharing">Slides</a>]</li>
+</ul>
+<!-- 
+### Journal
+- [Augmenting Reinforcement Learning with Transformer-based Scene Representation Learning for Decision-making of Autonomous Driving](https://arxiv.org/abs/2208.12263), Haochen Liu, **Zhiyu Huang**, Xiaoyu Mo, Chen Lv, **IEEE Transactions on Intelligent Vehicles, 2024** [![](https://img.shields.io/github/stars/georgeliu233/Scene-Rep-Transformer?style=social&label=Code Stars)](https://github.com/georgeliu233/Scene-Rep-Transformer) 
+
+- [Transformer-Based Traffic-Aware Predictive Energy Management of a Fuel Cell Electric Vehicle](https://ieeexplore.ieee.org/abstract/document/10409570), Jingda Wu, **Zhiyu Huang**, Chen Lv, **IEEE Transactions on Vehicular Technology, 2024**
+
+- [Map-Adaptive Multimodal Trajectory Prediction via Intention-Aware Unimodal Trajectory Predictors](https://ieeexplore.ieee.org/abstract/document/10323217/), Xiaoyu Mo, Haochen Liu, **Zhiyu Huang**, Xiuxian Li, Chen Lv,  **IEEE Transactions on Intelligent Transportation Systems, 2023**
+
+- [Fear-Neuro-Inspired Reinforcement Learning for Safe Autonomous Driving](https://ieeexplore.ieee.org/document/10273631), Xiangkun He, Jingda Wu, **Zhiyu Huang**, Zhongxu Hu, Jun Wang, Alberto Sangiovanni-Vincentelli, Chen Lv, **IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023**
+
+- [Human-Guided Reinforcement Learning with Sim-to-Real Transfer for Autonomous Navigation](https://ieeexplore.ieee.org/document/10250993), Jingda Wu, Yanxin Zhou, Haohan Yang, **Zhiyu Huang**, Chen Lv, **IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023** [![](https://img.shields.io/github/stars/wujingda/Multi-Hug-RL?style=social&label=Code Stars)](https://github.com/wujingda/Multi-Hug-RL)
+
+- [Uncertainty-Aware Model-Based Reinforcement Learning with Application to Autonomous Driving](https://arxiv.org/abs/2106.12194), Jingda Wu, **Zhiyu Huang**, Chen Lv, **IEEE Transactions on Intelligent Vehicles, 2022**
+
+- [Prioritized Experience-based Reinforcement Learning With Human Guidance for Autonomous Driving](https://arxiv.org/abs/2109.12516), Jingda Wu, **Zhiyu Huang**, Wenhui Huang, Chen Lv, **IEEE Transactions on Neural Networks and Learning Systems, 2022** [![](https://img.shields.io/github/stars/wujingda/Prioritized-Human-in-the-loop-End-to-end-Autonomous-Driving?style=social&label=Code Stars)](https://github.com/wujingda/Prioritized-Human-in-the-loop-End-to-end-Autonomous-Driving)
+
+- [Towards Human-in-the-loop AI: Enhancing Deep Reinforcement Learning via Real-time Human Guidance for Autonomous Driving](https://www.sciencedirect.com/science/article/pii/S2095809922004878), Jingda Wu, **Zhiyu Huang**, Zhongxu Hu, Chen Lv, **Engineering, 2022** [![](https://img.shields.io/github/stars/wujingda/Human-in-the-loop-Deep-Reinforcement-Learning?style=social&label=Code Stars)](https://github.com/wujingda/Human-in-the-loop-Deep-Reinforcement-Learning)
+
+- [Multi-Agent Trajectory Prediction With Heterogeneous Edge-Enhanced Graph Attention Network](https://ieeexplore.ieee.org/abstract/document/9700483), Xiaoyu Mo, **Zhiyu Huang**, Yang Xing, Chen Lv, **IEEE Transactions on Intelligent Transportation Systems, 2022** [![](https://img.shields.io/github/stars/Xiaoyu006/MATP-with-HEAT?style=social&label=Code Stars)](https://github.com/Xiaoyu006/MATP-with-HEAT)
+
+- [Personalized Trajectory Planning and Control of Lane-Change Maneuvers for Autonomous Driving](https://ieeexplore.ieee.org/abstract/document/9419761/), Chao Huang, Hailong Huang, Peng Hang, Hongbo Gao, Jingda Wu, **Zhiyu Huang**, Chen Lv, **IEEE Transactions on Vehicular Technology, 2021**
+
+### Conference
+- [Occupancy Prediction-Guided Neural Planner for Autonomous Driving](https://arxiv.org/abs/2305.03303), Haochen Liu, **Zhiyu Huang**, Chen Lv, **IEEE International Conference on Intelligent Transportation Systems (ITSC), 2023** [![](https://img.shields.io/github/stars/georgeliu233/OPGP?style=social&label=Code Stars)](https://github.com/georgeliu233/OPGP)
+
+- [Multi-modal Hierarchical Transformer for Occupancy Flow Field Prediction in Autonomous Driving](https://arxiv.org/abs/2208.00394), Haochen Liu, **Zhiyu Huang**, Chen Lv, **IEEE International Conference on Robotics and Automation (ICRA), 2023** [![](https://img.shields.io/github/stars/georgeliu233/STrajNet?style=social&label=Code Stars)](https://github.com/georgeliu233/STrajNet)
+
+- [Stochastic Multimodal Interaction Prediction for Urban Driving](https://ieeexplore.ieee.org/abstract/document/9922298), Xiaoyu Mo, **Zhiyu Huang**, Chen Lv, **IEEE International Conference on Intelligent Transportation Systems (ITSC), 2022**
+
+- [ReCoAt: A Deep Learning-based Framework for Multi-Modal Motion Prediction in Autonomous Driving Application](https://arxiv.org/abs/2207.00726), **Zhiyu Huang**, Xiaoyu Mo, Chen Lv, **IEEE International Conference on Intelligent Transportation Systems (ITSC), 2022**
+
+- [Improved Deep Reinforcement Learning with Expert Demonstrations for Urban Autonomous Driving](https://arxiv.org/abs/2102.09243), Haochen Liu, **Zhiyu Huang**, Jingda Wu, Chen Lv, **IEEE Intelligent Vehicles Symposium (IV), 2022**
+
+- [Digital Twin-enabled Reinforcement Learning for End-to-end Autonomous Driving](https://ieeexplore.ieee.org/abstract/document/9540179), Jingda Wu, **Zhiyu Huang**, Peng Hang, Chao Huang, Niels De Boer, Chen Lv, **IEEE International Conference on Digital Twins and Parallel Intelligence (DTPI), 2021**
+
+- [Multi-scale driver behaviors reasoning system for intelligent vehicles based on a joint deep learning framework](https://ieeexplore.ieee.org/abstract/document/9283004), Yang Xing, Zhongxu Hu, **Zhiyu Huang**, Chen Lv, Dongpu Cao, Efstathios Velenis, **IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2020**
+
+### Preprint
+- [Hybrid-Prediction Integrated Planning for Autonomous Driving](https://arxiv.org/abs/2402.02426), Haochen Liu, **Zhiyu Huang**, Wenhui Huang, Haohan Yang, Xiaoyu Mo, Chen Lv, **arXiv, 2024** [![](https://img.shields.io/github/stars/georgeliu233/HPP?style=social&label=Code Stars)](https://github.com/georgeliu233/HPP)
+-->
+<h1 id="%F0%9F%8E%96-honors-and-awards">🎖 Honors and Awards</h1>
+<!-- 
+- *2023.09* Best Paper Runner-up Award, ITSC 2023
+- *2023.06* [Innovation Award, nuPlan Planning Challenge](https://opendrivelab.com/AD23Challenge.html#nuplan_planning), CVPR Workshop on End-to-End Autonomous Driving \| [\[video\]](https://youtu.be/ZwhXilQKULY?t=1204)
+- *2023.06* [3rd Place Winner, Waymo Open Dataset Motion Prediction Challenge](http://cvpr2023.wad.vision/), CVPR Workshop on Autonomous Driving
+- *2022.12* [3rd Place Winner, Most Innovative Award, Driving SMARTS Competition](https://smarts-project.github.io/archive/2022_nips_driving_smarts/competition/), NeurIPS Competition Track \| [\[slides\]](https://smarts-project.github.io/assets/docs/aid_driving_smarts.pdf)
+- *2022.06* [2nd Place Winner, Waymo Open Dataset Occupancy and Flow Prediction Challenge](http://cvpr2022.wad.vision/), CVPR Workshop on Autonomous Driving
+- *2022.03* [2nd Place Winner, IEEE VTS Motor Vehicles Challenge](https://oraprdnt.uqtr.uquebec.ca/pls/public/gscw031?owa_no_site=6851), VPPC
+- *2021.06* [1st Place Winner, Waymo Open Dataset Interaction Prediction Challenge](http://cvpr2021.wad.vision/), CVPR Workshop on Autonomous Driving \| [\[video\]](https://youtu.be/sjXI_FKYw4Y?t=2546)
+- *2021.06* [2nd Place Winner, Waymo Open Dataset Motion Prediction Challenge](http://cvpr2021.wad.vision/), CVPR Workshop on Autonomous Driving
+- *2019.06* Outstanding Graduate (Top 1%)
+- *2018.10* National Scholarship (Top 1%)
+- *2017.10* National Scholarship (Top 1%) -->
+<ul>
+<li><em>2023.06</em> Conference Travel Award from the Graduate School of UNC Charlotte.</li>
+<li><em>2017, 2019</em> <a href="https://www.robomaster.com/en-US">RoboMaster</a> International First Price.</li>
+</ul>
+<h1 id="%F0%9F%93%96-education">📖 Education</h1>
+<ul>
+<li><em>2022.08 - Now</em>, Doctor of Philosophy, Computer Science, University of North Carolina at Charlotte, The United States</li>
+<li><em>2019.09 - 2022.06</em>, Master of Engineering, Mechanical Design and Theory, Dalian University of Technology, China</li>
+<li><em>2015.09 - 2019.06</em>, Bachelor of Engineering, Mechanical Engineering, China University of Petroleum, China</li>
+</ul>
+<h1 id="%F0%9F%93%9A-services">📚 Services</h1>
+<!-- 
+## Program Committee
+- Lead organizer of Special Session on [learning-powered prediction and decision-making](https://sites.google.com/view/itsc-lpad) at ITSC, 2023
+- Lead organizer of Special Session on [learning-powered and knowledge-driven autonomous driving](https://sites.google.com/view/itsc-lpad-2) at ITSC, 2024
+
+## Journal Reviewer
+- IEEE Transactions on Intelligent Transportation Systems 
+- IEEE Transactions on Neural Networks and Learning Systems
+- IEEE Transactions on Intelligent Vehicles 
+- IEEE Transactions on Cybernetics
+- IEEE Robotics and Automation Letters
+- Transportation Research Part C: Emerging Technologies
+- Engineering Applications of Artificial Intelligence
+- Artificial Intelligence Review -->
+<h2 id="external-reviewer">External Reviewer</h2>
+<ul>
+<li>IEEE Conference on Decision and Control (CDC' 26)</li>
+<li>The IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS' 26)</li>
+<li>The 2026 American Control Conference (ACC' 26)</li>
+<li>IEEE Transactions on Automation Science and Engineering (IEEE T-ASE)</li>
+<li>IEEE International Symposium on Multi-Robot &amp; Multi-Agent Systems (IEEE MRS' 25)</li>
+<li>The IEEE/ASME Transactions on Mechatronics (TMech)</li>
+<li>The Conference on Robot Learning (CoRL' 25, CoRL' 26)</li>
+<li>IEEE Robotics and Automation Letters (R-AL)</li>
+<li>12th IFAC Symposium on Intelligent Autonomous Vehicles (IAV' 25)</li>
+<li>IEEE International Conference on Robotics and Automation (ICRA' 25, ICRA' 26)</li>
+<li>International Federation of Automatic Control (IFAC'23, IFAC'26)</li>
+</ul>
+<h2 id="mentoring-activities">Mentoring Activities</h2>
+<ul>
+<li><a href="https://www.linkedin.com/in/ian-gao-978667162/">Ian Gao</a>, Bachelor Research Project. Now at UNC Chaphill as an undergraduate.</li>
+<li>John Modl, <a href="https://www.nsf.gov/crssprgm/reu/">REU Program</a>.</li>
+<li><a href="https://www.linkedin.com/in/matthewdelarosa/">Matthew De La Rosa</a>, <a href="https://www.nsf.gov/crssprgm/reu/">REU Program</a>.</li>
+<li><a href="https://www.linkedin.com/in/andrewchen0028/">Andrew Chen</a>, <a href="https://www.nsf.gov/crssprgm/reu/">REU Program</a>. Now at <a href="https://www.cmu.edu/mscf/news/evaluating-masters-in-financial-engineering-programs.html">CMU</a> as a Master student.</li>
+<li>Zachary Palko, <a href="https://www.nsf.gov/crssprgm/reu/">REU Program</a>.</li>
+<li><a href="https://www.linkedin.com/in/siwonjo">Siwon Jo</a>, Bachelor Research Project. Now at University of Pennsylvania as a Master student.</li>
+<li><a href="https://www.linkedin.com/in/mukul-mohan-77573522a/?trk=people-guest_people_search-card">Mukul Mohan</a>, Bachelor Research Project.</li>
+</ul>
+<p>(last updated: Jun. 2026)</p>
+
+</body>
+
+</html>
